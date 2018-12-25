@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "importHelpers": true,
+    "module": "commonjs",
+    "lib": ["esnext", "es2018", "es2017", "es7", "es6", "dom"],
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+
+    "noImplicitAny": false,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noStrictGenericChecks": true,
+
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
