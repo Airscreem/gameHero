@@ -1,6 +1,18 @@
-import {a} from './models/hero';
+import { Warrior, Paladin } from './heroes';
+import { Axe, Sword } from './weapons';
 
-console.warn(123);
-console.warn(3123);
-console.warn(8936846);
-console.warn(a);
+import { paladinStats, warriorStats } from './const/hero.config';
+import { swordStats, axeStats } from './const/weapon.config';
+
+const warrior = new Warrior(warriorStats);
+const paladin = new Paladin(paladinStats);
+
+const sword = new Sword(swordStats);
+const axe = new Axe(axeStats);
+
+paladin.setWeapon(axe);
+
+
+paladin.strike(warrior);
+paladin.strike(warrior);
+paladin.strike(warrior);
